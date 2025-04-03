@@ -12,7 +12,8 @@ public class Demo {
 		}
 		
 		finally {
-			return 3;
+			return 3; //finally block will always gets executed no matter 
+			         //whatever happens in try and catch block.
 		}
 	}
 	
