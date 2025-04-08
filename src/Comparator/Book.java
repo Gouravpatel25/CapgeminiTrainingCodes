@@ -14,10 +14,11 @@ public class Book implements Comparator{
 	}
 
 	@Override
-	public int compare(Object o1, Object o2) {
-	
-		return 0;
+	public String toString() {
+		return id+" "+name+" "+price;
 	}
+	
+	
 	
 	
 	
