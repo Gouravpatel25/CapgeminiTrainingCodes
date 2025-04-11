@@ -1,20 +1,23 @@
-package stackDS;
+package queue;
 
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
-
-public class Stack {
-
+public class Queue {
+	
 	private int[] data;
 	private int pointer=-1;
 	final private int intial_capacity=10;
 
-	Stack(){
+	Queue(){
 		data=new int[intial_capacity]; 
 	}
-
-	public boolean push(int value) {
+	Queue(int size) {
+		data=new int[size];
+	}
+	
+	public boolean insert(int value) {
+		
 		if(isFull()) {
 			data =Arrays.copyOf(data, data.length*2);
 		}
@@ -23,16 +26,19 @@ public class Stack {
 		return true;
 	}
 	
-	public int pop() {
+	public boolean delete() {
 		if(isEmpty()) {
 			//throw an exception
 			throw new EmptyStackException();
 			//System.out.println("Stack is Empty");
 		}
 		
-		int returnData=data[pointer];
+		System.out.println(data[0]);
+		for(int i=1; i<=pointer; i++) {
+			data[i-1]=data[i];
+		}
 		pointer--;
-		return returnData;
+		return true;
 	}
 	
 	public int peek() {
@@ -40,17 +46,21 @@ public class Stack {
 			throw new EmptyStackException();
 		}
 		
-		return data[pointer];
+		return data[0];
 	}
 	
-	private boolean isFull() {
-		return pointer == data.length-1;
+	public int getSize() {
+		return pointer+1;
+	}
+	
+	public boolean isFull() {
+		return data.length-1 == pointer;
 	}
 	
 	private boolean isEmpty() {
 		return pointer==-1;
 	}
-
+	
 	public void display() {
 		for(int i=0; i<=pointer; i++) {
 			System.out.print(data[i]+" ");
@@ -58,4 +68,3 @@ public class Stack {
 		System.out.println();
 	}
 }
-

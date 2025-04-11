@@ -182,7 +182,23 @@ public class singly_LL {
 		}
 		return -1;
 	}
-
+	
+	//method for stack Using Linked List
+	public int getValue(int index) {
+		
+		if(index < 0 || index > size) {
+			throw new IndexOutOfBoundsException();
+		}
+		
+		Node current=head;
+		int i=0;
+		while( i != index) {
+			current=current.next;
+			i++;
+		}
+		
+		return current.value;
+	}
 
 	private class Node {
 		int value;

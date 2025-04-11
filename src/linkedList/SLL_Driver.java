@@ -21,6 +21,8 @@ public class SLL_Driver {
 		   list.reverse();
 		   list.display();
 		   System.out.println(list.searchElement(10));
+		   System.out.println(list.getValue(1));
+		   
 		  
 		 }
 }

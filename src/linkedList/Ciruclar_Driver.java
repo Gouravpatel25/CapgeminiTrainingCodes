@@ -25,8 +25,8 @@ public class Ciruclar_Driver {
 		   System.out.println(list.searchElement(30));
 		   list.update(66,1);
 		   list.display();
-		  // list.reverse();
-		  // list.display();
+		   list.reverse();
+		  list.display();
 		   
 		}
 }

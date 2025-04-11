@@ -143,24 +143,26 @@ public class Circular_LL {
 
 // need to be done ourselves
 	public void reverse() {
-		Node prev=null;
-		Node current=head;
-		Node next=null;
-		tail=head;
-		
-		if(isEmpty() || size==1) {
-			return;
-		}
-		
-		do {
-			next=current.next;
-			current.next=prev;
-			prev=current;
-			current=next;
-			head=prev;
-		}while(current!=head);
-		
+	    if (isEmpty() || size == 1) {
+	        return;
+	    }
+
+	    Node prev = tail;        // tail acts like "null" here because it's circular
+	    Node current = head;
+	    Node next = null;
+
+	    do {
+	        next = current.next;
+	        current.next = prev;
+	        prev = current;
+	        current = next;
+	    } while (current != head);  // until we've reversed all nodes
+
+	    // Now update head and tail
+	    tail = head;
+	    head = prev;
 	}
+
 	
 	public int searchElement(int data) {
 		Node current=head;
