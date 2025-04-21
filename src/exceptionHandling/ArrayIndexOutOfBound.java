@@ -13,6 +13,8 @@ public class ArrayIndexOutOfBound {
 		try {
 			System.out.println(arr[90]);
 			
+			// Unreachable code because once the ArrayIndexOut of Bound 
+			//occurs in the above print statement cursor jumps directly to catch block in line number 32.
 			try {
 				ArrayIndexOutOfBound a=new ArrayIndexOutOfBound();
 				a=null;
@@ -24,10 +26,10 @@ public class ArrayIndexOutOfBound {
 				e.printStackTrace();
 				e.getMessage();
 				System.out.println("Null Pointer exception has occured");
-			}
+			} // unreachable code ends here
 		}
 		
-		catch (ArrayIndexOutOfBoundsException e) {
+		catch (ArrayIndexOutOfBoundsException e) { //again program executes from here
             System.out.println("Index is out of bounds! Please check the array size.");
             e.printStackTrace();
             System.out.println(e.getMessage());

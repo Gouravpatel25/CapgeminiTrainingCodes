@@ -14,89 +14,47 @@ public class Vehicle {
 		this.rentalPricePerDay = rentalPricePerDay;
 		this.isAvailable = isAvailable;
 	}
-	
-	
-
-
-
 
 
 	public String getVehicleNumber() {
 		return vehicleNumber;
 	}
 
-
-
-
-
 	public void setVehicleNumber(String vehicleNumber) {
 		this.vehicleNumber = vehicleNumber;
 	}
-
-
-
-
 
 	public String getModel() {
 		return model;
 	}
 
-
-
-
-
 	public void setModel(String model) {
 		this.model = model;
 	}
-
-
-
-
 
 	public String getBrand() {
 		return brand;
 	}
 
-
-
-
-
 	public void setBrand(String brand) {
 		this.brand = brand;
 	}
-
-
-
-
 
 	public double getRentalPricePerDay() {
 		return rentalPricePerDay;
 	}
 
-
-
-
-
 	public void setRentalPricePerDay(double rentalPricePerDay) {
 		this.rentalPricePerDay = rentalPricePerDay;
 	}
 
-	
 	public boolean isAvailable() {
 		return isAvailable;
 	}
 
-
-
-
-
 	public void setAvailable(boolean isAvailable) {
 		this.isAvailable = isAvailable;
 	}
-
-
-
-
 
 	public void rentVehicle() {
 		if(isAvailable) {

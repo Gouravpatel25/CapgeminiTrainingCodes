@@ -22,7 +22,7 @@ public class Person {
 	public void setAge(int age) {
 		this.age = age;
 	}
-	-   
+	 
 	public void displayInfo() {
 		System.out.println(this.name);
 		System.out.println(this.age);

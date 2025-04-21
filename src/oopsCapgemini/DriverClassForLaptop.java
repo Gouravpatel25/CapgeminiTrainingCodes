@@ -1,6 +1,6 @@
 package oopsCapgemini;
 
-public class DriverClass {
+public class DriverClassForLaptop {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

@@ -14,19 +14,19 @@ abstract class AbstractVehicle implements Vehicle {
 		System.out.println(this.name);
 	}
 	
-	@Override
+	//@Override
 	public void accelerate(int increment) {
 		speed +=increment;
 		System.out.println(name+" accelerated speed is "+speed);
 	}
 	
-	@Override
+	//@Override
 	public void brake(int decrement) {
 		speed=Math.max(0, speed-decrement);
 		System.out.println(name+" slowed down to "+speed);
 	}
 	
-	@Override
+	//@Override
 	public int getCurrentSpeed() {
 		return speed;
 	}

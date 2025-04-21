@@ -4,7 +4,7 @@ public class EmployeeEncapsulation {
 
 		// TODO Auto-generated method stub
 		
-		private String name="Ram";
+		private String name;
 		private int age;
 		private long phone_number;
 		private double salary;

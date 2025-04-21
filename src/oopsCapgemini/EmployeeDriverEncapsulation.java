@@ -2,7 +2,7 @@ package oopsCapgemini;
 
 //import oopsCapgemini.EmployeeEncapsulation;
 
-public class EmployeeDriver {
+public class EmployeeDriverEncapsulation {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
