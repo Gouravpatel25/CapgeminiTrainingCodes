@@ -11,9 +11,10 @@ public class Customer {
 		this.isLoggedIn=false;
 	}
 	
-	public void login() {
+	public boolean login() {
 		this.isLoggedIn=true;
 		System.out.println(name+" logged in succesfully");
+		return isLoggedIn;
 	}
 	
 	public void logout() {
