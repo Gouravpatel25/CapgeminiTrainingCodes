@@ -4,7 +4,16 @@ public class singly_LL {
 	private Node head;
 	private Node tail;
 	private int size = 0;
+	
+	private class Node {
+		int value;
+		Node next;
 
+		public Node(int value) {
+			this.value = value;
+		}
+	}
+	
 	public int getSize() {
 		Node temp=head;
 		int count=0;
@@ -81,6 +90,8 @@ public class singly_LL {
 	public boolean isEmpty() {
 		return head == null && tail == null;
 	}
+	
+	
 	public boolean delete() {
 		if (isEmpty()) {
 			return false;
@@ -200,14 +211,7 @@ public class singly_LL {
 		return current.value;
 	}
 
-	private class Node {
-		int value;
-		Node next;
 
-		public Node(int value) {
-			this.value = value;
-		}
-	}
 
 	public void display() {
 		Node temp = head;
